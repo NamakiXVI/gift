@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Will you be my valentine?</title>
+    <link rel="stylesheet" href="vendor/fontawesome.css">
+    <link rel="stylesheet" href="css/css-index.css">
+</head>
+<body class="touch-optimized">
+    <div class="container">
+        <div class="heart-header">
+            <i class="fas fa-heart"></i>
+        </div>
+        
+        <div class="animation-container">
+            <canvas id="animation-canvas"></canvas>
+            <div class="text-container">
+                <h1 id="valentine-text">Will you be my valentine?</h1>
+            </div>
+        </div>
+        
+        <div class="buttons-container" id="buttons-container">
+            <div class="buttons-row">
+                <button class="valentine-btn btn-pulse" id="yes-btn">Yes ❤️</button>
+                <button class="valentine-btn" id="no-btn">No 😢</button>
+            </div>
+        </div>
+        
+        <div class="success-message" id="success-message">
+            <h2>I KNEW YOU WOULD SAY YESS !!!</h2>
+            <p>Now let me show you something special...</p>
+            <div class="success-hearts">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Made with lots of love for Valentine's Day 2026</p>
+        </footer>
+    </div>
+    
+    <div class="floating-hearts" id="floating-hearts"></div>
+
+    <script src="js/js-index.js"></script>
+</body>
+</html>

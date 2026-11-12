@@ -1,0 +1,31 @@
+window.DISC_CONTENT = {
+  updated: "2026-11-12",
+  photos: ["photos/1A4B446F-004F-4482-8F64-56B35DC464CD.jpg", "photos/IMG_2628.jpg", "photos/IMG_3571.JPG", "photos/IMG_3572.jpg", "photos/IMG_4929.JPG", "photos/IMG_5267.JPG", "photos/IMG_5338.JPG", "photos/IMG_7599.jpg", "photos/IMG_7600.jpg", "photos/IMG_7608.JPG", "photos/IMG_7822.PNG", "photos/IMG_7831.JPG", "photos/IMG_7873.JPG"],
+  videos: [],
+  audio: [
+    { src: "audio/500lbs - Lil Tecca.mp3", seconds: 144 },
+    { src: "audio/Baby Keem - ORANGE SODA (1 Hour Loop) - LONGLIVESPINO.mp3", seconds: 0 },
+    { src: "audio/boyfriend - Ariana Grande.mp3", seconds: 186 },
+    { src: "audio/Call Back - Don Toliver.mp3", seconds: 124 },
+    { src: "audio/Carpe Diem - Joker Out.mp3", seconds: 166 },
+    { src: "audio/Chicago - Michael Jackson.mp3", seconds: 246 },
+    { src: "audio/DRIFTING - NF.mp3", seconds: 200 },
+    { src: "audio/Fell Again - Cikho.mp3", seconds: 162 },
+    { src: "audio/I KNOW  - Travis Scott.mp3", seconds: 212 },
+    { src: "audio/is it cool - Steve Lacy.mp3", seconds: 174 },
+    { src: "audio/Love Me - Lil Wayne.mp3", seconds: 255 },
+    { src: "audio/Lucky Daye - That's You (Official Video) - LuckyDayeVEVO.mp3", seconds: 254 },
+    { src: "audio/MOTTO - NF.mp3", seconds: 217 },
+    { src: "audio/No Role Modelz - J. Cole.mp3", seconds: 293 },
+    { src: "audio/Redbone - Childish Gambino.mp3", seconds: 327 },
+    { src: "audio/Sex, Drugs, Etc. - Beach Weather.mp3", seconds: 197 },
+    { src: "audio/Shut up My Moms Calling - Hotel Ugly.mp3", seconds: 165 },
+    { src: "audio/So Bad - VSTRA.mp3", seconds: 187 },
+    { src: "audio/STAY HERE 4 LIFE - AAP Rocky.mp3", seconds: 346 },
+    { src: "audio/Sweater Weather - The Neighbourhood.mp3", seconds: 241 },
+    { src: "audio/Swimming Pools (Drank) - Kendrick Lamar.mp3", seconds: 248 },
+    { src: "audio/Thailand - Malcolm Todd.mp3", seconds: 235 },
+    { src: "audio/these days (Clean) - mike.mp3", seconds: 269 },
+    { src: "audio/Tomorrow - Tyler, The Creator.mp3", seconds: 182 }
+  ]
+};

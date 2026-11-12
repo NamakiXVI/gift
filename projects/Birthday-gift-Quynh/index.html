@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#FFF8F3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Happy Birthday, Babee 💕</title>
+<link href="vendor/fonts.css" rel="stylesheet">
+<script src="vendor/tailwind.js"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#FFF8F3',
+          blossom: '#FFE1EC',
+          blush: '#FFB6C1',
+          rose: '#F2748C',
+          rosedark: '#E1516F',
+          lavender: '#E6D9F7',
+          lavenderdark: '#C9B3E8',
+          mint: '#C6F1DE',
+          mintdark: '#8FDDBB',
+          gold: '#F0C46A',
+          ink: '#5C3A4E'
+        },
+        fontFamily: {
+          heading: ['Fredoka', 'sans-serif'],
+          body: ['Quicksand', 'sans-serif'],
+          script: ['Pacifico', 'cursive']
+        },
+        keyframes: {
+          flashpop: { '0%': { opacity: 0 }, '12%': { opacity: 1 }, '100%': { opacity: 0 } },
+          popnum: {
+            '0%': { transform: 'scale(0.4)', opacity: 0 },
+            '35%': { transform: 'scale(1.2)', opacity: 1 },
+            '65%': { transform: 'scale(0.96)' },
+            '100%': { transform: 'scale(1)', opacity: 1 }
+          },
+          bouncein: { '0%': { transform: 'scale(1)' }, '45%': { transform: 'scale(0.86)' }, '100%': { transform: 'scale(1)' } },
+          risein: { '0%': { transform: 'translateY(16px)', opacity: 0 }, '100%': { transform: 'translateY(0)', opacity: 1 } },
+          spinslow: { '0%': { transform: 'rotate(0deg)' }, '100%': { transform: 'rotate(360deg)' } },
+          floaty: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-5px)' } },
+          pulsesoft: { '0%,100%': { transform: 'scale(1)' }, '50%': { transform: 'scale(1.09)' } },
+          sparklefloat: {
+            '0%': { transform: 'translate(0,0) scale(0.5)', opacity: 0 },
+            '25%': { opacity: 1 },
+            '100%': { transform: 'translate(var(--dx,0px),-80px) scale(1.15)', opacity: 0 }
+          }
+        },
+        animation: {
+          flashpop: 'flashpop .5s ease-out',
+          popnum: 'popnum .45s cubic-bezier(.34,1.56,.64,1)',
+          bouncein: 'bouncein .28s ease',
+          risein: 'risein .25s ease-out',
+          spinslow: 'spinslow 1s linear infinite',
+          floaty: 'floaty 2.6s ease-in-out infinite',
+          pulsesoft: 'pulsesoft 1.6s ease-in-out infinite',
+          sparklefloat: 'sparklefloat 1s ease-out forwards'
+        }
+      }
+    }
+  };
+</script>
+<style>
+  html, body { background: #FFF8F3; overscroll-behavior: none; }
+  * { -webkit-tap-highlight-color: transparent; }
+  body { font-family: 'Quicksand', sans-serif; -webkit-text-size-adjust: 100%; }
+  .font-heading { font-family: 'Fredoka', sans-serif; }
+  .font-script { font-family: 'Pacifico', cursive; }
+  .bouncy { transition: transform .15s ease, box-shadow .15s ease; }
+  .bouncy:active { transform: scale(0.9); }
+
+  @keyframes risein { 0% { transform: translateY(16px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+  .rise { animation: risein .5s ease-out both; }
+
+  @keyframes sparklefloat {
+    0% { transform: translate(0,0) scale(0.5); opacity: 0; }
+    25% { opacity: 1; }
+    100% { transform: translate(var(--dx,0px),-80px) scale(1.15); opacity: 0; }
+  }
+  .heart-sparkle { position: absolute; pointer-events: none; font-size: 1.4rem; z-index: 20; animation: sparklefloat 1s ease-out forwards; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-flashpop, .animate-popnum, .animate-bouncein, .animate-risein, .animate-spinslow, .animate-floaty, .animate-pulsesoft, .animate-sparklefloat, .rise, .heart-sparkle { animation: none !important; }
+    .bouncy:active { transform: none; }
+  }
+</style>
+</head>
+<body class="bg-cream text-ink min-h-screen">
+
+<div id="app"
+     class="relative mx-auto flex min-h-screen w-full max-w-md flex-col items-center justify-center p-6 bg-cream"
+     style="min-height: 100dvh;
+            padding-top: max(1.5rem, env(safe-area-inset-top));
+            padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+            padding-left: max(1.5rem, env(safe-area-inset-left));
+            padding-right: max(1.5rem, env(safe-area-inset-right));">
+
+  <header class="relative z-10 flex flex-col items-center text-center">
+    <span class="rise mb-2 inline-flex items-center gap-1.5 rounded-full bg-blossom px-3 py-1.5 font-heading text-xs font-semibold text-rose" style="animation-delay:.05s">
+      🎀 A little Gift for you
+    </span>
+
+    <div class="rise relative" style="animation-delay:.15s">
+      <span aria-hidden="true" class="animate-floaty pointer-events-none absolute -left-9 top-0 text-2xl" style="animation-delay:-.4s">🎈</span>
+      <span aria-hidden="true" class="animate-floaty pointer-events-none absolute -right-6 top-3 text-xl" style="animation-delay:-1.3s">🌸</span>
+      <span aria-hidden="true" class="animate-floaty pointer-events-none absolute -left-4 bottom-1 text-lg" style="animation-delay:-2s">✨</span>
+      <h1 id="headline" class="animate-floaty font-script text-rose leading-[1.25] text-[clamp(2.4rem,10.5vw,2.9rem)] drop-shadow-[0_4px_10px_rgba(242,116,140,0.25)]">
+        Happy Birthday,<br>Quynh 💕
+      </h1>
+    </div>
+  </header>
+
+  <section id="message-card"
+           class="rise relative z-10 mt-5 w-full overflow-hidden rounded-[32px] border-[6px] border-white bg-blossom px-5 pb-5 pt-6 shadow-[0_10px_30px_rgba(242,116,140,0.25)]"
+           style="animation-delay:.3s">
+    <div class="absolute left-3 top-3 h-3 w-3 rounded-full bg-rose shadow-[0_0_8px_2px_rgba(242,116,140,0.6)]"></div>
+    <span aria-hidden="true" class="animate-floaty absolute right-4 top-3 text-xl" style="animation-delay:-1s">🎂</span>
+
+    <div class="space-y-2.5 text-[15px] font-semibold leading-[1.6] text-ink">
+      <p class="font-heading text-lg font-bold text-rose">Liebe Quynh,</p>
+      <p>Today is your Birthdayy babee and I am sooo grateful and thankful that you were bornnn.&nbsp;🌸</p>
+      <p>Everyday you bring a smile to my face, makes my normal boring days into little adventures and fun datess and you always have the most beautiful Smile of the &nbsp;World too babee hehehe</p>
+      <p>Thats why I made you a little Photobooth: for sweet pictures, Stickers and for our sweett <span class="whitespace-nowrap">Memoriess. 📸✨</span></p>
+      <p>Happyy Birthdayy my prettyy Girll I &nbsp;lovee you!</p>
+    </div>
+
+    <p class="mt-2 text-right font-script text-xl text-rose">Your Boyfriendd 💕</p>
+  </section>
+
+  <div class="rise relative z-10 mt-6 w-full" style="animation-delay:.45s">
+    <a href="cute-photobooth.html"
+       class="bouncy flex w-full items-center justify-center gap-2 rounded-full bg-rose px-6 py-4 font-heading text-lg font-bold text-cream shadow-[0_10px_30px_rgba(242,116,140,0.45)]">
+      Go to the Photobooth <span class="animate-floaty inline-block">📸</span>
+    </a>
+    <p class="mt-2.5 text-center text-xs font-semibold text-ink/60">
+      Btw: Allow Camera access so I can seee your pretty face hehehe&nbsp;💗
+    </p>
+  </div>
+
+</div>
+
+<script>
+  (function () {
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) return;
+
+    var card = document.getElementById('message-card');
+    var hearts = ['💕', '💖', '💗', '✨', '🌸'];
+
+    function spawnHeart(x, y) {
+      var s = document.createElement('span');
+      s.className = 'heart-sparkle';
+      s.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+      s.style.left = (x - 12) + 'px';
+      s.style.top = (y - 16) + 'px';
+      s.style.setProperty('--dx', (Math.random() * 60 - 30).toFixed(0) + 'px');
+      card.appendChild(s);
+      s.addEventListener('animationend', function () { s.remove(); });
+    }
+
+    card.addEventListener('pointerdown', function (e) {
+      var r = card.getBoundingClientRect();
+      for (var i = 0; i < 3; i++) {
+        (function (d) {
+          setTimeout(function () { spawnHeart(e.clientX - r.left, e.clientY - r.top); }, d * 90);
+        })(i);
+      }
+    });
+  })();
+</script>
+  </body>
+</html>
+            

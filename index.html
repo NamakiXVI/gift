@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFF8F3">
+<title>For you, Quynh 💕</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <span class="badge rise" style="animation-delay:.05s">🎀 A little disc for you</span>
+    <div class="rise" style="animation-delay:.15s">
+      <div class="headline-wrap">
+        <span class="deco" aria-hidden="true" style="left:-2.4rem;top:.2rem;font-size:1.7rem;animation-delay:-.4s">💿</span>
+        <span class="deco" aria-hidden="true" style="right:-1.9rem;top:.7rem;font-size:1.4rem;animation-delay:-1.3s">🌸</span>
+        <span class="deco" aria-hidden="true" style="left:-1.2rem;bottom:.2rem;font-size:1.1rem;animation-delay:-2s">✨</span>
+        <h1>For you,<br>Quynh 💕</h1>
+      </div>
+    </div>
+    <p class="subtitle rise" style="animation-delay:.25s">Everything on this disc was made just for you 💗</p>
+  </header>
+
+  <section class="rise" style="animation-delay:.3s">
+    <h2 class="section-title">🎁 Open these first</h2>
+    <div class="gifts">
+      <a class="gift gift-letter" href="gifts/letter.html">
+        <span class="gift-emoji">💌</span>
+        <span class="gift-title">A letter for you</span>
+        <span class="gift-text">Find someplace where youre alone and open it 💭</span>
+        <span class="btn">Read it 💕</span>
+      </a>
+      <a class="gift gift-flowers" href="gifts/bouquet.html">
+        <span class="gift-emoji" style="animation-delay:-.8s">💐</span>
+        <span class="gift-title">Flowers for you</span>
+        <span class="gift-text">A bouquet just for you 🌱</span>
+        <span class="btn">Open 💐</span>
+      </a>
+      <a class="gift gift-wishes" href="gifts/wishlist.html">
+        <span class="gift-emoji" style="animation-delay:-1.6s">🎀</span>
+        <span class="gift-title">Your wishlist</span>
+        <span class="gift-text">Add anything you wish for ✨</span>
+        <span class="btn">Open 🎀</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="rise" style="animation-delay:.4s">
+    <h2 class="section-title">💿 The picture on your disc</h2>
+    <div class="disc-stage">
+      <div class="disc" role="img" aria-label="The photo collage burned onto this disc">
+        <img src="assets/disc-design.jpg" alt="">
+        <div class="disc-hub"></div>
+      </div>
+      <p class="hint font-hand">Hold the disc under a lamp and tilt it slowly to find the picture ✨</p>
+    </div>
+  </section>
+
+  <section class="rise" style="animation-delay:.5s">
+    <h2 class="section-title">🎀 Past websites I made for you</h2>
+    <div class="projects">
+      <article class="card project">
+        <div class="project-emoji">🎂</div>
+        <h3>Birthday Photobooth</h3>
+        <p>Your birthday message and a cute photobooth for our memories 📸</p>
+        <a class="btn" href="projects/Birthday-gift-Quynh/index.html">Open 💕</a>
+      </article>
+      <article class="card project lavender">
+        <div class="project-emoji" style="animation-delay:-.8s">💌</div>
+        <h3>Valentine's 2025</h3>
+        <p>"Will you be my Valentine?", our love timer and our date spots</p>
+        <a class="btn" href="projects/valentine/index.html">Open 💕</a>
+      </article>
+      <article class="card project mint">
+        <div class="project-emoji" style="animation-delay:-1.6s">🌹</div>
+        <h3>Valentine's 2026</h3>
+        <p>"Will you be my valentine?" and a rose just for you</p>
+        <a class="btn" href="projects/valentines2026/index.html">Open 💕</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="photos" class="hidden">
+    <h2 class="section-title">📸 Our photos</h2>
+    <div id="photo-grid" class="photos"></div>
+  </section>
+
+  <section id="videos" class="hidden">
+    <h2 class="section-title">🎬 Our videos</h2>
+    <div id="video-list" class="media-list"></div>
+  </section>
+
+  <section id="audio" class="hidden">
+    <h2 class="section-title">🎧 Songs</h2>
+    <p class="songs-hint font-hand">tap a song to play it 🎶</p>
+    <div id="audio-list" class="songs"></div>
+  </section>
+
+  <footer>
+    <p class="font-script">made with 💕 just for you</p>
+    <p id="made-date" class="made-date"></p>
+  </footer>
+</main>
+
+<div id="viewer" class="viewer" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button id="viewer-close" class="viewer-btn viewer-close" type="button" aria-label="Close">✕</button>
+  <button id="viewer-prev" class="viewer-btn viewer-prev" type="button" aria-label="Previous photo">‹</button>
+  <figure class="viewer-figure">
+    <img id="viewer-img" alt="">
+    <figcaption id="viewer-cap" class="font-hand"></figcaption>
+  </figure>
+  <button id="viewer-next" class="viewer-btn viewer-next" type="button" aria-label="Next photo">›</button>
+</div>
+
+<script src="assets/manifest.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
