@@ -60,7 +60,7 @@
     local: '💾 Everything saves by itself on this computer',
     noStore: "⚠️ This browser can't save. Try Chrome, Edge or Firefox",
     connecting: '☁️ Opening your online wishlist…',
-    online: '☁️ Saved online: the same list on every device',
+    online: '☁️ Saved online',
     saving: '⏳ Saving…',
     offline: "📴 You're offline. Changes save online when you're back",
     offlineLocal: "📴 You're offline, so this is the copy on this computer",
